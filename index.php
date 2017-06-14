@@ -12,47 +12,47 @@
 			font: 14px Consolas;
 		}
 
-        textarea#rawphp {
-            width: 1000px;
-            height: 355px;
-        }
+		textarea#rawphp {
+		    width: 1000px;
+		    height: 355px;
+		}
 
-        textarea#evalresult {
-            width: 600px;
-            height: 200px;
-        }
+		textarea#evalresult {
+		    width: 600px;
+		    height: 200px;
+		}
 
-        .container {
-            height: 390px;
-        }
+		.container {
+		    height: 390px;
+		}
 
-        .showlinesnumber {
-            display: inline-block;
-            background-color: #AAAAAA;
-            vertical-align: top;
-            width: 20px;
-            height: 350px;
-            overflow: hidden;
-            text-align: left;
-            line-height: 1.2;
-            font: 14px Consolas;
-            margin-top: 3px;
-        }
+		.showlinesnumber {
+		    display: inline-block;
+		    background-color: #AAAAAA;
+		    vertical-align: top;
+		    width: 20px;
+		    height: 350px;
+		    overflow: hidden;
+		    text-align: left;
+		    line-height: 1.2;
+		    font: 14px Consolas;
+		    margin-top: 3px;
+		}
 
-        .formgroup {
-            display: inline-block;
-        }
+		.formgroup {
+		    display: inline-block;
+		}
 
-        .showlinesnumber #line {
+		.showlinesnumber #line {
 
-        }
+		}
 	</style>
 </head>
 
 <?php
-$php = "";
 
-$php = (isset($_POST['php']) ? $_POST['php'] : '');
+$php = !empty($_POST['php']) ? $_POST['php'] : '';
+
 ?>
 
 <input type="hidden" id="linecount">
