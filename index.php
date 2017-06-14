@@ -10,6 +10,7 @@
 		textarea {
 			border-radius: 4px;
 			font: 14px Consolas;
+            tab-size: 4;
 		}
 
 		textarea#rawphp {
